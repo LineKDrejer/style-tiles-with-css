@@ -1,8 +1,6 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+
 
 * {
   box-sizing: border-box;
@@ -20,11 +18,15 @@ use the fonts in other ways in the font hierarchy etc. */
   --color-4: hotpink;
   --color-5: rebeccapurple;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  
   --main-text-color: #000;
 
   --white-space: 1rem;
+}
+
+body {
+  background-color: beige;
+  font-family: 'Patrick Hand SC', cursive;
 }
 
 button {
@@ -36,21 +38,21 @@ a {
 }
 
 button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  background-color:  green;
+  
 }
 
 button:active {
-  background-color: var(--bg-color);
+  background-color: green;
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  color: #000;
   font-size: 4rem;
 }
 html {
   font-size: 100%;
-  font-family: var(--primary-font);
+  
 }
 
 img {
@@ -67,15 +69,14 @@ footer {
 }
 
 .full-width {
-  background: var(--bg-color);
+  background: url(../../coffee-beans.jpg);
   color: white;
   width: 100%;
 }
 
 .header-wrapper h1 {
   font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: -2px;
+  
   padding-right: 0.75em;
   font-weight: bold;
   color: white;
@@ -86,11 +87,12 @@ footer {
   color: rgba(255, 255, 255, 0.95);
   font-weight: bold;
   margin: var(--white-space) 0;
+  letter-spacing: 0.1rem;
 }
 
 .header-wrapper h3 {
   font-size: 1.2rem;
-  font-style: italic;
+  
 }
 
 .header-wrapper h4 {
@@ -128,19 +130,19 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: rgb(0, 0, 0);
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: rgb(102, 37, 13);
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: rgb(62, 112, 51);
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+  background-color: rgb(255, 255, 255);
 }
 
 .color-swatch-5 {
@@ -183,22 +185,18 @@ ul li:last-child {
 button {
   padding: 1rem;
   border-radius: 4px;
-  background: var(--link-color);
+  background-color: black ;
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
-  letter-spacing: 1px;
+  font: bold 1.25em/1 var();
   color: white;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 0 0; /* 22S - 0 margin-bottom mobile */
 }
 
-.secondary-button {
-  background: var(--color-5);
-}
+
 
 button:focus,
 button:active,
@@ -213,31 +211,30 @@ button:focus-within {
 
 .h1-sample {
   font-size: 2.4rem;
-  font-weight: bold;
+  letter-spacing: 0.1rem;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
   font-size: 1.25rem;
+  letter-spacing: 0.1rem;
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
   line-height: 1.5;
   max-width: 960px;
+  letter-spacing: 0.1rem;
 }
 
 strong {
   font-weight: bold;
+  color: green;
 }
 
 em {
-  font-style: italic;
+  
 }
 
 a {
-  font-family: var(--primary-font);
   color: var(--link-color);
   font-weight: bold;
   text-decoration: none;
@@ -248,7 +245,6 @@ p[class*="font-details-"] {
   margin-top: 0.5rem;
   margin-bottom: calc(2 * var(--white-space));
   font-size: 0.75rem;
-  font-family: var(--secondary-font);
   color: #6f6f6f;
 }
 
@@ -262,7 +258,7 @@ p[class*="font-details-"] {
 }
 
 footer {
-  font-style: italic;
+  
 }
 
 @media (min-width: 800px) {
